@@ -1,5 +1,4 @@
-const SWAP_API = 'https://swapi.dev/api/'
-const SWAP_PEOPLE = 'people'
+
 
 // export const getApiResource  =  (url) => {
 //     fetch(url)
@@ -9,10 +8,25 @@ const SWAP_PEOPLE = 'people'
 // }
 
 export const getApiResource  = async (url) => {
+    try{
     const res =  await fetch(url)
-    const body =  await res.json()
-    
-    console.log(body)
+
+    if(!res.ok){
+        console.error('Could not fetch. ', res.status)
+        return false
+    }
+
+   return  await res.json()
+} catch(error){
+    console.error('Could not fetch. ', error.message)
+     return false
+}
 }
 
-getApiResource(SWAP_API + SWAP_PEOPLE)
+// (async () => {
+// const body = await getApiResource(SWAP_API + SWAP_PEOPLE)
+// console.log(body)
+// })()
+
+// getApiResource(SWAP_API + SWAP_PEOPLE).then(body => console.log(body))
+
