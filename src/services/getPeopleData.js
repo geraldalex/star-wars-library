@@ -1,4 +1,4 @@
-import { SWAP_PEOPLE, HTTP,HTTPS, SWAP_ROOT, GUIDE_IMG_EXTENSION, URL_IMG_PERSON } from "../constans/api"
+import { SWAP_PEOPLE, HTTP,HTTPS, SWAP_ROOT, GUIDE_IMG_EXTENSION, URL_IMG_PERSON } from "@constans/api"
 
 const getId = (url, category) => {
     let id = url

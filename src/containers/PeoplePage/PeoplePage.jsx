@@ -1,17 +1,24 @@
 import { useEffect, useState } from "react";
-import { getApiResource } from "../../utils/network";
-import { API_PEOPLE } from "../../constans/api";
+import PropTypes from 'prop-types'
+
+import { withErrorApi } from "@hok-helpers/withErrorApi";
+import PeopleList from "@components/PeoplePage/PeopleList";
+import { getApiResource } from "@utils/network";
 import { getPeopleId, getPeopleImage } from "../../services/getPeopleData";
-import PeopleList from "../../components/PeoplePage/PeopleList";
+import { API_PEOPLE } from "@constans/api";
+
 import styles from "./PeoplePage.module.css";
 
-const PeoplePage = () => {
-    console.log('render')
+const PeoplePage = ({setErrorApi}) => {
+    
   const [people, setPeople] = useState(null);
+   
 
   const getResource = async (url) => {
     const res = await getApiResource(url);
-    const peopleList = res.results.map(({ name, url }) => {
+
+if(res){
+  const peopleList = res.results.map(({ name, url }) => {
     const id = getPeopleId(url)
     const img =getPeopleImage(id)
 
@@ -22,6 +29,12 @@ const PeoplePage = () => {
       };
     });
     setPeople(peopleList);
+    setErrorApi(false)
+} else {
+  setErrorApi(true)
+}
+
+
   };
 
   useEffect(() => {
@@ -30,8 +43,18 @@ const PeoplePage = () => {
 
   return (
     <>
+    
+      <>
+      <h1 style={{color:'white'}}>Navigation</h1>
       {people && <PeopleList people= {people}/>}
+      </>
+  
+
     </>
   );
 };
-export default PeoplePage;
+
+PeoplePage.propTypes = {
+  setErrorApi: PropTypes.func
+}
+export default withErrorApi(PeoplePage) ;
