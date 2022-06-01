@@ -1,17 +1,21 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "@components/Header";
+import routesConfig from "@routes/routesConfig";
+import styles from "./App.module.css";
 
-import PeoplePage from '@containers/PeoplePage';
-import styles from './App.module.css';
+const App = () => {
+  return (
+    <>
+      <BrowserRouter>
+        <Header/>
 
-
-
-
-const  App = () =>  {
-  return(
-
-    <PeoplePage/>
-  )
-}
+        <Routes>
+          {routesConfig.map((route, index) => (
+            <Route key={index} path={route.path} element={route.element} />
+          ))}
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
+};
 export default App;
-
-
-

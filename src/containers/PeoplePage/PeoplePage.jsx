@@ -45,7 +45,7 @@ if(res){
     <>
     
       <>
-      <h1 style={{color:'white'}}>Navigation</h1>
+      <h1 className='heder__text'>Navigation</h1>
       {people && <PeopleList people= {people}/>}
       </>
   
