@@ -1,0 +1,13 @@
+
+:root {
+    --font-size-small: 14px;
+    --font-family-main: sans-serif;
+    --font-bold: 600;
+
+    --transition:.4s;
+
+    --color-white: #fff;
+    --color-white: #000;
+    --color-gray: #9c9c9c;
+
+}

@@ -6,19 +6,28 @@
   --color-violet: #ae72c2;
   --color-dark-gray: #10100e;
 
+  --spacing-small: 10px;  
   --spacing-medium: 20px;  
   --spacing-large: 30px;  
   --border-radius-small: 3px; 
   
   --text-shadow-yellow:
   0 0 2px var(--color-white),
+  0 0 40px var( --color-yellow);
+
+  --text-shadow-blue:
+  0 0 2px var(--color-white),
   0 0 40px var( --color-blue);
+
 
   --font-family-main: sans-serif;
   --font-size-main: 16px;
   --font-size-header: 26px;
+  --font-size-subheader: 18px;
+  --width-max:1200px;
 
   --theme-default-header: #cccc46;
+  --theme-default-bgimage: url(@static/bg.jpeg);
 
   --transition: .4s;
   --font-bold:600;
@@ -32,6 +41,15 @@ body {
   background-color: var(--color-dark-gray);
   font-family: var(--font-family-main);
   font-size: var(--font-size-main);
+  background-image: var(--theme-default-bgimage);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-attachment: fixed;
+}
+
+img {
+  display: block;
 }
 
 .heder__text {
