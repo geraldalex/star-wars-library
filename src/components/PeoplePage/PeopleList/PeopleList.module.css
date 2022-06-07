@@ -13,6 +13,13 @@ margin: var(--spacing-medium);
 border-radius: var(--border-radius-small);
 background-color:  var(--color-white);
 cursor: pointer;
+
+}
+
+.list__item:hover {
+    transform: scale(1.1);
+    transition-duration: 400ms;
+    
 }
 
 .list__item a {

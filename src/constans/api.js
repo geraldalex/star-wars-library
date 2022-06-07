@@ -8,6 +8,7 @@ export const SWAP_PEOPLE = 'people'
 export const SWAP_PARAM_PAGE = '/?page='
 
 export const API_PEOPLE = HTTPS + SWAP_ROOT + SWAP_PEOPLE + SWAP_PARAM_PAGE
+export const API_PERSON= HTTPS + SWAP_ROOT + SWAP_PEOPLE
 
 //wisual guide
 

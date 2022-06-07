@@ -6,10 +6,12 @@
   --color-violet: #ae72c2;
   --color-dark-gray: #10100e;
 
+  --spacing-ultra-small: 5px;  
   --spacing-small: 10px;  
   --spacing-medium: 20px;  
   --spacing-large: 30px;  
   --border-radius-small: 3px; 
+  --border-radius-medium: 5px; 
   
   --text-shadow-yellow:
   0 0 2px var(--color-white),
@@ -25,6 +27,8 @@
   --font-size-header: 26px;
   --font-size-subheader: 18px;
   --width-max:1200px;
+
+  --margin-list: 7px;
 
   --theme-default-header: #cccc46;
   --theme-default-bgimage: url(@static/bg.jpeg);

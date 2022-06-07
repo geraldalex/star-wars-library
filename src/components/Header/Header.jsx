@@ -6,7 +6,7 @@ const  Header = () =>  {
     <div className={styles.container}>
         <ul className={styles.list__container}>
             <li><NavLink to="/">Главная</NavLink></li>
-            <li><NavLink to="/people/?page=1">Люди</NavLink></li>
+            <li><NavLink to="/people/?page=1" >Люди</NavLink></li>
             <li><NavLink to="/not-found">Не найдено</NavLink></li>
         </ul>
     </div>
