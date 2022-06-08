@@ -1,14 +1,19 @@
 import PropTypes from 'prop-types';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense } from 'react';
 import { useParams } from 'react-router';
 import { getApiResource } from '@utils/network';
 import {getPeopleImage} from '@services/getPeopleData'
 import PersonPhoto from '@components/PersonPage/PersonPhoto';
 import PersonInfo from '@components/PersonPage/PersonInfo';
+
 import PersonLinkBack from '@components/PersonPage/PersonLinkBack';
 import { API_PERSON } from '@constans/api';
 import styles from './PersonPage.module.css';
 import { withErrorApi } from '@hok-helpers/withErrorApi';
+
+// import PersonFilms from '@components/PersonPage/PersonFilms';
+import UiLoading from '@components/UI/UiLoading';
+const PersonFilms = React.lazy(() => import('@components/PersonPage/PersonFilms'))
 
 
 const  PersonPage = ({match, setErrorApi}) =>  {
@@ -17,6 +22,7 @@ const  PersonPage = ({match, setErrorApi}) =>  {
     const [personInfo, setPersonInfo] = useState(null)
     const [personName, setPersonName] = useState(null)
     const [personPhoto, setPersonPhoto] = useState(null)
+    const [personFilms, setPersonFilms] = useState(null)
 
 
     useEffect(() => {
@@ -41,6 +47,10 @@ const  PersonPage = ({match, setErrorApi}) =>  {
 
        setPersonName(res.name)
        setPersonPhoto(getPeopleImage(id))
+
+    
+       res.films.length && setPersonFilms(res.films)
+
        setErrorApi(false)
    } else {
        setErrorApi(true)
@@ -49,6 +59,7 @@ const  PersonPage = ({match, setErrorApi}) =>  {
     },[])
   return(
     <>
+   
     <PersonLinkBack/>
     <div className={styles.wrapper}>
     <span className={styles.person__name}>{personName}</span>
@@ -59,6 +70,15 @@ const  PersonPage = ({match, setErrorApi}) =>  {
 <PersonInfo personInfo={personInfo}/>
     )
     }
+
+    {personFilms && (
+   
+        <Suspense fallback={<UiLoading />}>
+<PersonFilms personFilms={personFilms}/>
+        </Suspense>
+       
+        
+    )}
     </div>
     </div>
     </>

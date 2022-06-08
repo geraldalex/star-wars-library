@@ -12,7 +12,7 @@ const  PeopleNavigation = ({getResource, prevPage, nextPage, counterPage}) =>  {
     {/* <h1 className='heder__text'>Навигация</h1> */}
     <Link to={`/people/?page=${counterPage-1}`} className={styles.buttons}>
   <UiButton
-   text="Предвидущая"
+   text="Предыдущая"
    onClick={handleChangePrev}
    disabled={!prevPage}
   

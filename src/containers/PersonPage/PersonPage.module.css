@@ -8,7 +8,7 @@ margin-top: 45px;
     padding: var(--spacing-small);
 background-color: var(--color-name);
 color: var(--color-white);
-font-size: var(--font-size-subheader);
+font-size: var(--font-size-subheader); 
 font-weight: var(--font-bold);
 border-radius:
  var(--border-radius-small)
