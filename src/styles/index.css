@@ -40,9 +40,18 @@
   --width-max:1200px;
 
   --margin-list: 7px;
+/* THEME */
+--theme-light-header: #cccc46;
+--theme-dark-header: #ca6c6f;
+--theme-neitral-header:  #dfe2df;
 
-  --theme-default-header: #cccc46;
-  --theme-default-bgimage: url(@static/bg.jpeg);
+  --theme-default-header: var(--theme-light-header);
+
+  --theme-light-bgimage: url(@static/bg.jpeg);
+  --theme-dark-bgimage: url(@static/bgDark.jpg);
+  --theme-neitral-bgimage: url(@static/bgNeitral.jpg);
+
+  --theme-default-bgimage: var(--theme-light-bgimage);
 
   --transition: .4s;
   --font-bold:600;
