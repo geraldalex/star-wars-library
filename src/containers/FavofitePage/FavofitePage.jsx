@@ -11,12 +11,27 @@ const  FavofitePage = () =>  {
     const storeData = useSelector(state=> state.favoriteReducer)
 
     useEffect(() => {
-
+     const arr = Object.entries(storeData)
+     if(arr.length){
+      const res = arr.map(item => {
+        return {
+          id: item[0],
+          ...item[1]
+        }
+      })
+   
+      setPeople(res)
+     }
     },[])
    
   return(
     <>
-    <h1>FavofitePage</h1>
+   <h1 className='heder__text'>Избранные персонажи</h1>
+    {
+      people.length ?  <PeopleList people={people}/> : <h2 className={styles.coment}>Нет данных</h2>
+                    
+    }
+   
     </>
   )
 }
