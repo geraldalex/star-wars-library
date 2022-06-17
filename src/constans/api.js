@@ -6,9 +6,11 @@ export const HTTP = 'http://'
 export const SWAP_ROOT = 'swapi.dev/api/'
 export const SWAP_PEOPLE = 'people'
 export const SWAP_PARAM_PAGE = '/?page='
+export const SWAP_PARAM_SEARCH = '/?search='
 
 export const API_PEOPLE = HTTPS + SWAP_ROOT + SWAP_PEOPLE + SWAP_PARAM_PAGE
 export const API_PERSON= HTTPS + SWAP_ROOT + SWAP_PEOPLE
+export const API_SEARCH= HTTPS + SWAP_ROOT + SWAP_PEOPLE + SWAP_PARAM_SEARCH
 
 //wisual guide
 

@@ -34,6 +34,8 @@ switch (isTheme.theme){
             <li><NavLink to="/">Главная</NavLink></li>
             <li><NavLink to="/people/?page=1" >Люди</NavLink></li>
             <li><NavLink to="/not-found">Не найдено</NavLink></li>
+            <li><NavLink to="/search">Поиск</NavLink></li>
+            <li><NavLink to="/fail">Упс</NavLink></li>
            
         </ul>
 
