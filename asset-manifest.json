@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.a542bd46.css",
-    "main.js": "/static/js/main.19c260d5.js",
-    "static/css/895.9006ebcf.chunk.css": "/static/css/895.9006ebcf.chunk.css",
-    "static/js/895.79ca1e31.chunk.js": "/static/js/895.79ca1e31.chunk.js",
+    "main.css": "/static/css/main.c8859309.css",
+    "main.js": "/static/js/main.3740ca91.js",
+    "static/css/895.f8df4bec.chunk.css": "/static/css/895.f8df4bec.chunk.css",
+    "static/js/895.a5eff529.chunk.js": "/static/js/895.a5eff529.chunk.js",
     "static/media/bgDark.jpg": "/static/media/bgDark.efc043db67085abeb2de.jpg",
     "static/media/bgNeitral.jpg": "/static/media/bgNeitral.7150de4a909be3d6be12.jpg",
     "static/media/neitral-side.jpg": "/static/media/neitral-side.5adee8489d2e17c57b0e.jpg",
@@ -15,7 +15,7 @@
     "static/media/not-found.jpg": "/static/media/not-found.1062f5e41ef989b5973a.jpg",
     "static/media/lightsaber.svg": "/static/media/lightsaber.eb7d4cd665426117002814db79fceef4.svg",
     "static/media/space-station.svg": "/static/media/space-station.7a027c6ec10ba7b5d8c880df5f4e65ea.svg",
-    "static/media/droid.svg": "/static/media/droid.de165dd887badb2bdbe9d97b8e527c6f.svg",
+    "static/media/droid.svg": "/static/media/droid.e59cd9ffbca010a59c9af48a5bbbcafb.svg",
     "static/media/loader-blue.svg": "/static/media/loader-blue.905901111db9df565d439da4f7d32787.svg",
     "static/media/loader-black.svg": "/static/media/loader-black.ca1e58060c9c93f8e970bc59e4c80c63.svg",
     "static/media/loader-white.svg": "/static/media/loader-white.713d00649104a24bb201d05a2bc848e6.svg",
@@ -24,13 +24,13 @@
     "static/media/close.svg": "/static/media/close.4f7c4d25e353db1c2ffe4445885f1d7f.svg",
     "static/media/bookmark.svg": "/static/media/bookmark.113ef259aa8379a53f6fe050bdd2a242.svg",
     "index.html": "/index.html",
-    "main.a542bd46.css.map": "/static/css/main.a542bd46.css.map",
-    "main.19c260d5.js.map": "/static/js/main.19c260d5.js.map",
-    "895.9006ebcf.chunk.css.map": "/static/css/895.9006ebcf.chunk.css.map",
-    "895.79ca1e31.chunk.js.map": "/static/js/895.79ca1e31.chunk.js.map"
+    "main.c8859309.css.map": "/static/css/main.c8859309.css.map",
+    "main.3740ca91.js.map": "/static/js/main.3740ca91.js.map",
+    "895.f8df4bec.chunk.css.map": "/static/css/895.f8df4bec.chunk.css.map",
+    "895.a5eff529.chunk.js.map": "/static/js/895.a5eff529.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a542bd46.css",
-    "static/js/main.19c260d5.js"
+    "static/css/main.c8859309.css",
+    "static/js/main.3740ca91.js"
   ]
 }
