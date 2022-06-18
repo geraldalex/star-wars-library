@@ -7,7 +7,7 @@ import styles from "./App.module.css";
 const App = () => {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/star-wars-library/">
       <div className={styles.wrapper}>
         <Header/>
 
